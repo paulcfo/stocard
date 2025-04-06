@@ -4,6 +4,31 @@ This project is a personal endeavor born out of nostalgia for the original Stoca
 
 **Disclaimer:** This project is purely for educational and personal purposes. It is not intended to infringe on any trademarks or copyrights held by Klarna or the original Stocard developers. I mean no harm, and I kindly request Klarna not to pursue legal action regarding this hobby project.
 
+## Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="screenshots/snapshot-1.jpeg" width="250" alt="Card List Screen" />
+        <br />
+        <em>Card List Screen</em>
+      </td>
+      <td align="center">
+        <img src="screenshots/snapshot-2.jpeg" width="250" alt="Card Detail Screen" />
+        <br />
+        <em>Card Detail View</em>
+      </td>
+      <td align="center">
+        <img src="screenshots/snapshot-3.jpeg" width="250" alt="Barcode Scanner" />
+        <br />
+        <em>Barcode Scanner</em>
+      </td>
+    </tr>
+
+  </table>
+</div>
+
 ## Features
 
 - Scan and store loyalty cards and membership barcodes
