@@ -3,7 +3,8 @@ import { View, StyleSheet, Text, ScrollView } from 'react-native';
 import { TextInput, Button, ActivityIndicator, useTheme, Card as PaperCard, IconButton } from 'react-native-paper';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { CameraView, Camera, BarcodeScanningResult } from 'expo-camera';
+import { Camera, CameraView } from 'expo-camera';
+import type { BarcodeScanningResult } from 'expo-camera';
 import { RootStackParamList } from '../App';
 import { Card, BarcodeType } from '../types/card';
 import { saveCard, getCardById, updateCard } from '../storage/cardStorage';
@@ -51,19 +52,17 @@ export default function CardForm() {
 
   useEffect(() => {
     if (scanning) {
-      Camera.requestCameraPermissionsAsync().then(({ status }) => {
+      (async () => {
+        const { status } = await Camera.requestCameraPermissionsAsync();
         setHasPermission(status === 'granted');
-      });
+      })();
     }
   }, [scanning]);
 
-  const handleBarCodeScanned = (scanningResult: BarcodeScanningResult) => {
-    const { data, type } = scanningResult;
-    if (data && scanning) {
-      setScanning(false);
-      setScannedData(data);
-      setScannedType(type === 'qr' ? 'qr' : 'linear');
-    }
+  const handleBarCodeScanned = ({ type, data }: BarcodeScanningResult) => {
+    setScanning(false);
+    setScannedData(data);
+    setScannedType(type === 'qr' ? 'qr' : 'linear');
   };
 
   const handleSave = async () => {
@@ -126,8 +125,10 @@ export default function CardForm() {
       <View style={styles.container}>
         <CameraView
           style={StyleSheet.absoluteFillObject}
+          barcodeScannerSettings={{
+            barcodeTypes: ['qr', 'pdf417', 'ean13', 'ean8', 'code128'],
+          }}
           onBarcodeScanned={handleBarCodeScanned}
-          barcodeScannerSettings={{ barcodeTypes: ["qr", "ean13", "ean8", "upc_a", "upc_e", "code39", "code93", "code128", "codabar", "itf", "pdf417"] } as any}
         />
       </View>
     );

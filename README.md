@@ -1,8 +1,14 @@
 # Stocard (Tribute)
 
-This project is a personal endeavor born out of nostalgia for the original Stocard app before its acquisition and termination. I missed the simplicity and functionality of the old app and decided to recreate some aspects of it for my own use and learning.
+This project is a personal endeavor born out of nostalgia for the original Stocard app before its acquisition and subsequent changes. I missed the simplicity and functionality of the old app and decided to recreate some aspects of it for my own use and learning.
 
 **Disclaimer:** This project is purely for educational and personal purposes. It is not intended to infringe on any trademarks or copyrights held by Klarna or the original Stocard developers. I mean no harm, and I kindly request Klarna not to pursue legal action regarding this hobby project.
+
+## Features
+
+- Scan and store loyalty cards and membership barcodes
+- Easily access your cards with a simple, clean interface
+- Works offline - no internet connection required to use your cards
 
 ## Local Installation
 
@@ -31,6 +37,18 @@ To run this project locally, follow these steps:
    - For iOS: Press `i` in the terminal or scan the QR code with your camera app
    - For Android: Press `a` in the terminal or scan the QR code with the Expo Go app
 
+## Building for Production
+
+To create a standalone build:
+
+```bash
+# For iOS
+eas build --platform ios --profile production
+
+# For Android
+eas build --platform android --profile production
+```
+
 ## Requirements
 
 - Node.js (v16 or newer)
@@ -41,4 +59,4 @@ To run this project locally, follow these steps:
 
 ## Development
 
-This is a React Native application built with Expo. The project uses TypeScript.
+This is a React Native application built with Expo. The project uses TypeScript for type safety and better development experience.

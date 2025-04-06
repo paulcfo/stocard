@@ -1,19 +1,13 @@
 PODS:
   - boost (1.84.0)
   - DoubleConversion (1.1.6)
-  - EXBarCodeScanner (13.0.1):
-    - EXImageLoader
-    - ExpoModulesCore
-    - ZXingObjC/OneD
-    - ZXingObjC/PDF417
   - EXConstants (17.0.8):
     - ExpoModulesCore
-  - EXImageLoader (4.7.0):
-    - ExpoModulesCore
-    - React-Core
   - Expo (52.0.44):
     - ExpoModulesCore
   - ExpoAsset (11.0.5):
+    - ExpoModulesCore
+  - ExpoBrightness (13.0.3):
     - ExpoModulesCore
   - ExpoCamera (16.0.18):
     - ExpoModulesCore
@@ -1335,7 +1329,7 @@ PODS:
     - Yoga
   - react-native-get-random-values (1.11.0):
     - React-Core
-  - react-native-safe-area-context (5.3.0):
+  - react-native-safe-area-context (4.12.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1348,8 +1342,8 @@ PODS:
     - React-featureflags
     - React-graphics
     - React-ImageManager
-    - react-native-safe-area-context/common (= 5.3.0)
-    - react-native-safe-area-context/fabric (= 5.3.0)
+    - react-native-safe-area-context/common (= 4.12.0)
+    - react-native-safe-area-context/fabric (= 4.12.0)
     - React-NativeModulesApple
     - React-RCTFabric
     - React-rendererdebug
@@ -1358,7 +1352,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-safe-area-context/common (5.3.0):
+  - react-native-safe-area-context/common (4.12.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1379,7 +1373,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-safe-area-context/fabric (5.3.0):
+  - react-native-safe-area-context/fabric (4.12.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1673,7 +1667,7 @@ PODS:
     - React-logger
     - React-perflogger
     - React-utils (= 0.76.9)
-  - RNCAsyncStorage (2.1.2):
+  - RNCAsyncStorage (1.23.1):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1694,7 +1688,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNScreens (4.10.0):
+  - RNScreens (4.4.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1715,9 +1709,9 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - RNScreens/common (= 4.10.0)
+    - RNScreens/common (= 4.4.0)
     - Yoga
-  - RNScreens/common (4.10.0):
+  - RNScreens/common (4.4.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1733,6 +1727,49 @@ PODS:
     - React-NativeModulesApple
     - React-RCTFabric
     - React-RCTImage
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - RNSVG (15.8.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.10.14.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - RNSVG/common (= 15.8.0)
+    - Yoga
+  - RNSVG/common (15.8.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.10.14.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
     - React-rendererdebug
     - React-utils
     - ReactCodegen
@@ -1750,11 +1787,10 @@ PODS:
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
-  - EXBarCodeScanner (from `../node_modules/expo-barcode-scanner/ios`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
-  - EXImageLoader (from `../node_modules/expo-image-loader/ios`)
   - Expo (from `../node_modules/expo`)
   - ExpoAsset (from `../node_modules/expo-asset/ios`)
+  - ExpoBrightness (from `../node_modules/expo-brightness/ios`)
   - ExpoCamera (from `../node_modules/expo-camera/ios`)
   - ExpoFileSystem (from `../node_modules/expo-file-system/ios`)
   - ExpoFont (from `../node_modules/expo-font/ios`)
@@ -1827,6 +1863,7 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - RNScreens (from `../node_modules/react-native-screens`)
+  - RNSVG (from `../node_modules/react-native-svg`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -1839,16 +1876,14 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
-  EXBarCodeScanner:
-    :path: "../node_modules/expo-barcode-scanner/ios"
   EXConstants:
     :path: "../node_modules/expo-constants/ios"
-  EXImageLoader:
-    :path: "../node_modules/expo-image-loader/ios"
   Expo:
     :path: "../node_modules/expo"
   ExpoAsset:
     :path: "../node_modules/expo-asset/ios"
+  ExpoBrightness:
+    :path: "../node_modules/expo-brightness/ios"
   ExpoCamera:
     :path: "../node_modules/expo-camera/ios"
   ExpoFileSystem:
@@ -1990,17 +2025,18 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-async-storage/async-storage"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  RNSVG:
+    :path: "../node_modules/react-native-svg"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
   DoubleConversion: f16ae600a246532c4020132d54af21d0ddb2a385
-  EXBarCodeScanner: e2dd9b42c1b522a2adc9202b1dfbc64cb34456d1
   EXConstants: a1f35b9aabbb3c6791f8e67722579b1ffcdd3f18
-  EXImageLoader: ab589d67d6c5f2c33572afea9917304418566334
   Expo: 83a0ca93325155885341b6cfc988c9c711dd0048
   ExpoAsset: 0687fe05f5d051c4a34dd1f9440bd00858413cfe
+  ExpoBrightness: d3f54a52ea62b6c4deb81bfb5569a8bc664487ab
   ExpoCamera: 173e000631122854b87c20310513981e89030bc6
   ExpoFileSystem: c8c19bf80d914c83dda3beb8569d7fb603be0970
   ExpoFont: 773955186469acc5108ff569712a2d243857475f
@@ -2041,7 +2077,7 @@ SPEC CHECKSUMS:
   React-Mapbuffer: 6efad4a606c1fae7e4a93385ee096681ef0300dc
   React-microtasksnativemodule: a645237a841d733861c70b69908ab4a1707b52ad
   react-native-get-random-values: 21325b2244dfa6b58878f51f9aa42821e7ba3d06
-  react-native-safe-area-context: ac66ae671d8110cf9fecd766ece62b80f8e4d792
+  react-native-safe-area-context: 0dfbd139206a79364916959bc8b1a6bea3caba97
   React-nativeconfig: 8efdb1ef1e9158c77098a93085438f7e7b463678
   React-NativeModulesApple: 958d4f6c5c2ace4c0f427cf7ef82e28ae6538a22
   React-perflogger: 9b4f13c0afe56bc7b4a0e93ec74b1150421ee22d
@@ -2069,8 +2105,9 @@ SPEC CHECKSUMS:
   React-utils: 54df9ada708578c8ad40d92895d6fed03e0e8a9e
   ReactCodegen: 21a52ccddc6479448fc91903a437dd23ddc7366c
   ReactCommon: bfd3600989d79bc3acbe7704161b171a1480b9fd
-  RNCAsyncStorage: 6afcd80a5b7f25742648444dfc4b166518d239fd
-  RNScreens: 71d02bc2e6db79773a57fc9a1bdaf09df10d9126
+  RNCAsyncStorage: ac02697867ba18d2cfd761ebb144417fe65b210e
+  RNScreens: 2856a2abe759a5a56946874f76372c9f033af19a
+  RNSVG: 81d52481cde97ce0dcc81a55b0310723817088d0
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   Yoga: 40f19fff64dce86773bf8b602c7070796c007970
   ZXingObjC: 8898711ab495761b2dbbdec76d90164a6d7e14c5
