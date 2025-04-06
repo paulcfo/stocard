@@ -10,19 +10,19 @@ This project is a personal endeavor born out of nostalgia for the original Stoca
   <table>
     <tr>
       <td align="center">
-        <img src="screenshots/snapshot-1.jpeg" width="250" alt="Card List Screen" />
+        <img src="screenshots/snapshot-3.jpeg" width="250" alt="Card List Screen" />
         <br />
         <em>Card List Screen</em>
       </td>
       <td align="center">
         <img src="screenshots/snapshot-2.jpeg" width="250" alt="Card Detail Screen" />
         <br />
-        <em>Card Detail View</em>
+        <em>Card Detail View (Linear)</em>
       </td>
       <td align="center">
         <img src="screenshots/snapshot-3.jpeg" width="250" alt="Barcode Scanner" />
         <br />
-        <em>Barcode Scanner</em>
+        <em>Card Detail View (QR) </em>
       </td>
     </tr>
 
