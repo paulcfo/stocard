@@ -20,7 +20,7 @@ This project is a personal endeavor born out of nostalgia for the original Stoca
         <em>Card Detail View (Linear)</em>
       </td>
       <td align="center">
-        <img src="screenshots/snapshot-3.jpeg" width="250" alt="Barcode Scanner" />
+        <img src="screenshots/snapshot-1.jpeg" width="250" alt="Barcode Scanner" />
         <br />
         <em>Card Detail View (QR) </em>
       </td>
